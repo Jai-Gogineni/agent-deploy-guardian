@@ -1,0 +1,23 @@
+{
+  "name": "agent-deploy-guardian",
+  "version": "1.0.0",
+  "description": "Deployment guardian — watches deployments, validates health, auto-rollbacks",
+  "main": "dist/agent.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/agent.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["mcp", "argocd", "deployment", "rollback", "guardian", "agent"],
+  "author": "Jai Gogineni",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  }
+}
